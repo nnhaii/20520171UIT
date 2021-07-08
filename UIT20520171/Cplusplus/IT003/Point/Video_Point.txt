@@ -1,0 +1,19 @@
+Con Trỏ 1
+    https://www.youtube.com/watch?v=CBkdEurxhSs
+Bai tap
+    https://youtu.be/7fhJgz3j_SI
+    
+&a: địa chỉ biến a
+*p: giá trị tại ô nhớ có địa chỉ là giá trị của biến p
+
+int main(){
+    int a = 3;
+    int b = 4;
+    int* a = pa;
+    int* b = pb;
+    *pa = *pa + *pb;
+    *pb = *pa - *pb;
+    *pa = *pa - *pb;
+    printf("%d %d", a, b);
+    return 0;
+}
