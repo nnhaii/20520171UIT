@@ -26,9 +26,8 @@ int main()
             s=s*10 + int(post[j]) - 48;
             j++;
         }
-        i = j;
+        i = j-1;
         cout << s << " operand\n";
     }
     return 0; 
 }
- 
