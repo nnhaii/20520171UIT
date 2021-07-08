@@ -1,20 +1,25 @@
-def nextMove(n,r,c,grid):
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+
+def nextMove(n, r, c, grid):
     for i in range(len(grid)):
         for j in range(len(grid)):
-            if grid[i][j]=='p':
-                if i>r:
+            if grid[i][j] == 'p':
+                if i > r:
                     return 'DOWN'
-                elif i<r:
+                elif i < r:
                     return 'UP'
-                elif j>c:
+                elif j > c:
                     return 'RIGHT'
                 else:
                     return 'LEFT'
 
+
 n = int(input())
-r,c = [int(i) for i in input().strip().split()]
+(r, c) = [int(i) for i in input().strip().split()]
 grid = []
 for i in range(0, n):
     grid.append(input())
 
-print(nextMove(n,r,c,grid))
+print nextMove(n, r, c, grid)

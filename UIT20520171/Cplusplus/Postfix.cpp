@@ -37,7 +37,7 @@ float Eval(string hauto){
     for(string::iterator i = hauto.begin(); i != hauto.end(); i++){
        if(isOperator(*i) != -1){
          a = stackk.top(); stackk.pop();
-         b = stackk.top(); stackk.pop();
+    b = stackk.top(); stackk.pop();
          stackk.push(operation(a, b, *i));
        }
        else if(isOperand(*i) > 0){

@@ -1,4 +1,8 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 # Developer: Hai Nguyen Nam
+
+
 def nextMove(posr, posc, board):
     dirty_row = dirty_col = 0
     for i in range(len(board)):
@@ -8,18 +12,20 @@ def nextMove(posr, posc, board):
                 dirty_col = j
 
     if dirty_col < posc:
-        print('LEFT')
-    elif dirty_col  > posc:
-        print('RIGHT')
+        print 'LEFT'
+    elif dirty_col > posc:
+        print 'RIGHT'
     elif dirty_row < posr:
-        print('UP')
+        print 'UP'
     elif dirty_row > posr:
-        print('DOWN')
+        print 'DOWN'
     else:
-        print('CLEAN')
+        print 'CLEAN'
+
 
 # Set data
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     pos = [int(i) for i in input().strip().split()]
     board = [[j for j in input().strip()] for i in range(5)]
     nextMove(pos[0], pos[1], board)
