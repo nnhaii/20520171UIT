@@ -6,17 +6,15 @@ using namespace std;
 int main()
 {
 
-	int **ketNoi = new int*[10000000];
-	for (int i = 0; i< 10000000; i++){
-		ketNoi[i] = new int[2];
-	} 
-	int *danhSach = new int[10000000];
 	int soMay, soKenh, mayBiTanCong;
 	// Nhập 
 	cin >> soMay >> soKenh;
-
+    
+    int **ketNoi = new int*[soKenh];
+    int *danhSach = new int[soKenh];
+    
 	for (int i = 0; i < soKenh; i++) {
-		int x, y;
+		ketNoi[i] = new int[2];
 		cin >> ketNoi[i][1];
 		cin >> ketNoi[i][0];
 	}
